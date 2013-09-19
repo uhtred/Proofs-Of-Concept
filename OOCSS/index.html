@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="../css/.css">
+    <title>OOCSS</title>
 
     <style>
+
+    * { box-sizing: border-box; }
+
+    
 
     /* style */
 
@@ -20,13 +22,13 @@
 
     /* structure */
 
-    * { box-sizing: border-box; }
-
-    .fl{
+    /*
+    
+    .pull-left{
         float: left;
     }
 
-    .fr{
+    .pull-right{
         float: right;
     }
 
@@ -88,24 +90,48 @@
     .text{
         margin-bottom: 20px;
     }
+    
+    */
 
     </style>
 </head>
 <body class="light-theme">
 
-    <h1>OOCSS</h1>
+    <div class="wrapper full-width">
 
-    <article class="box-middle featured">
-        <h2 class="title">As Aventuras de Pi</h2>
-        <p class="text">
-            Pi é um jovem que sobrevive a um naufrágio. Sua travessia pelos mares com um tigre de bengala o leva a descobrir-se e gerar uma relação de confiança e amizade com o animal.
-        </p>
-        <a class="button-link">Conheça os pacotes <i class="icon-arrow-right"></i></a>
-        <button class="button-social align-middle"><i class="icon-facebook"></i></button>
-        <button class="button-social align-middle"><i class="icon-facebook"></i></button>
-    </article>
+        <header>        
+            <h1 class="page-title">OOCSS</h1>
+        </header>
 
-</div>
+        <section>
+
+            <article class="box-middle featured light pull-left">
+                <h2 class="middle-title">As Aventuras de Pi</h2>
+                <p class="text">
+                    Pi é um jovem que sobrevive a um naufrágio. Sua travessia pelos mares com um tigre de bengala o leva a descobrir-se e gerar uma relação de confiança e amizade com o animal.
+                </p>
+                <a class="button-link">Conheça os pacotes <i class="icon-arrow-right"></i></a>
+                <button class="button-social align-middle"><i class="icon-facebook"></i></button>
+                <button class="button-social align-middle"><i class="icon-facebook"></i></button>
+            </article>
+
+            <article class="box-middle featured dark pull-right">
+                <h2 class="middle-title">As Aventuras de Pipa</h2>
+                <p class="text">
+                    Pi é um jovem que sobrevive a um naufrágio. Sua travessia pelos mares com um tigre de bengala o leva a descobrir-se e gerar uma relação de confiança e amizade com o animal.
+                </p>
+                <a class="button-link">Conheça os pacotes <i class="icon-arrow-right"></i></a>
+                <button class="button-social align-middle"><i class="icon-facebook"></i></button>
+                <button class="button-social align-middle"><i class="icon-facebook"></i></button>
+            </article>
+
+        </section>
+
+        <footer>
+            <p class="text">Footer test</p>
+        </footer>
+   
+    </div>
 
 </body>
 </html>
